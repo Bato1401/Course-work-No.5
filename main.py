@@ -20,13 +20,14 @@ def main():
 
     db = DBManager(params, db_name)
 
+    #  Методы для работы с БД
     db.get_companies_and_vacancies_count()  # Показывает все компании и количество вакансий у каждой компании
-    db.get_all_vacancies()  # Показывает все вакансии (назв комп, назв вак, ЗП, ссылки на вакансию)
-    db.get_avg_salary()  # Показывает среднюю зарплату по вакансиям
-    db.get_vacancies_with_higher_salary()  # Показывает все вакансии, у которых зарплата выше средней
+    # db.get_all_vacancies()  # Показывает все вакансии (назв комп, назв вак, ЗП, ссылки на вакансию)
+    # db.get_avg_salary()  # Показывает среднюю зарплату по вакансиям
+    # db.get_vacancies_with_higher_salary()  # Показывает все вакансии, у которых зарплата выше средней
 
-    keyword = 'Менеджер'
-    db.get_vacancies_with_keyword(keyword)  # Показывает все вакансии, в названии которого содержится переданное слово
+    # keyword = 'Менеджер'
+    # db.get_vacancies_with_keyword(keyword)  # Показывает все вакансии, в названии которого содержится переданное слово
 
 
 if __name__ == '__main__':
